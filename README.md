@@ -5,7 +5,7 @@ Tu, Yunbin, et al. ["I2Transformer: Intra- and Inter-relation Embedding Transfor
 
 ## We illustrate the training details as follows:
 
-# 1. Prepare feature files
+### 1. Prepare feature files
 Download [tvc_feature_release.tar.gz ](https://drive.google.com/file/d/1bSjxbKSxp1qEBCSwAmk8YlkRl1ztgrWO/view?usp=sharing) (23GB).
 After downloading the file, extract it to the `data` directory.
 ```
