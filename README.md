@@ -15,7 +15,7 @@ You should be able to see `video_feature` under `data/tvc_feature_release` direc
 It contains video features (ResNet, I3D, ResNet+I3D). Plase note that this code only used the features of ResNet+I3D.
 
 
-2. Install dependencies:
+### 2. Install dependencies:
 - Ubuntu 16.04
 - Python 2.7
 - PyTorch 1.1.0
@@ -26,7 +26,7 @@ It contains video features (ResNet, I3D, ResNet+I3D). Plase note that this code 
 - tensorboardX
 - An RTX 2080Ti
 
-3. Add project root to `PYTHONPATH`
+### 3. Add project root to `PYTHONPATH`
 ```
 source setup.sh
 ```
@@ -34,18 +34,18 @@ Note that you need to do this each time you start a new session.
 
 ### Training and Inference
 
-0. Git clone the Microsoft COCO evaluation server to evaluate captions and place it in the dir: 'I2Transformer/standalone_eval/'
+### 0. Git clone the Microsoft COCO evaluation server to evaluate captions and place it in the dir: 'I2Transformer/standalone_eval/'
 ```
 git clone https://github.com/tylin/coco-caption.git
 ```
 
-1. Build Vocabulary
+### 1. Build Vocabulary
 ```
 bash baselines/multimodal_transformer/scripts/build_vocab.sh
 ```
 Running this command will build vocabulary `cache/tvc_word2idx.json` from TVC train set. 
  
-2. I^2Transformer training
+### 2. I2Transformer training
 ```
 bash baselines/multimodal_transformer/scripts/train.sh video_sub resnet_i3d
 ```
@@ -56,7 +56,7 @@ Training using the above config will stop at around epoch 22, around 7 hours wit
 You should get ~47.18 CIDEr-D and ~11.59 BLEU@4 scores on val set. 
 The resulting model and config will be saved at a dir: `baselines/multimodal_transformer/results/video_sub-res-*`
 
-3. I^2Transformer inference
+### 3. I^2Transformer inference
 After training, you can inference using the saved model on val or test_public set:
 ```
 bash baselines/multimodal_transformer/scripts/translate.sh MODEL_DIR_NAME SPLIT_NAME
@@ -64,5 +64,5 @@ bash baselines/multimodal_transformer/scripts/translate.sh MODEL_DIR_NAME SPLIT_
 `MODEL_DIR_NAME` is the name of the dir containing the saved model, 
 e.g., `video_sub-res-*`.  `SPLIT_NAME` could be `val` or `test_public`. 
 
-4. our results 
+### 4. our results 
 The generated captions and evaluation scores on the val and test_public set are in the dir: 'our_results'
