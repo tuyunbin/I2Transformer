@@ -1,7 +1,7 @@
 # I<sup>2</sup>Transformer: Intra- and Inter-relation Embedding Transformer for TV Show Captioning
 This package contains the accompanying code for the following paper:
 
-Tu, Yunbin, et al. ["I2Transformer: Intra- and Inter-relation Embedding Transformer for TV Show Captioning."](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9738841), which has appeared as regular paper in IEEE TIP。 
+Tu, Yunbin, et al. ["I<sup>2</sup>Transformer: Intra- and Inter-relation Embedding Transformer for TV Show Captioning."](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9738841), which has appeared as regular paper in IEEE TIP。 
 
 ## We illustrate the training details as follows:
 
@@ -44,7 +44,7 @@ bash baselines/multimodal_transformer/scripts/build_vocab.sh
 ```
 Running this command will build vocabulary `cache/tvc_word2idx.json` from TVC train set. 
  
-### 6. I2Transformer training
+### 6. I<sup>2</sup>Transformer training
 ```
 bash baselines/multimodal_transformer/scripts/train.sh video_sub resnet_i3d
 ```
@@ -55,7 +55,7 @@ Training using the above config will stop at around epoch 22, around 7 hours wit
 You should get ~47.18 CIDEr-D and ~11.59 BLEU@4 scores on val set. 
 The resulting model and config will be saved at a dir: `baselines/multimodal_transformer/results/video_sub-res-*`
 
-### 7. I^2Transformer inference
+### 7. I<sup>2</sup>Transformer inference
 After training, you can inference using the saved model on val or test_public set:
 ```
 bash baselines/multimodal_transformer/scripts/translate.sh MODEL_DIR_NAME SPLIT_NAME
