@@ -64,7 +64,7 @@ bash baselines/multimodal_transformer/scripts/translate.sh MODEL_DIR_NAME SPLIT_
 `MODEL_DIR_NAME` is the name of the dir containing the saved model, 
 e.g., `video_sub-res-*`.  `SPLIT_NAME` could be `val` or `test_public`. 
 
-### 8. our results 
+### 8. Our results 
 The generated captions and evaluation scores on the val and test_public set are in the dir: 'our_results'
 
 ## Citing
