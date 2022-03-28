@@ -39,6 +39,7 @@ git clone https://github.com/tylin/coco-caption.git
 ```
 
 ### 5. Build Vocabulary
+You could skip this step because this file has been provided.
 ```
 bash baselines/multimodal_transformer/scripts/build_vocab.sh
 ```
