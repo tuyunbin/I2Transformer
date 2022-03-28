@@ -1,0 +1,14 @@
+val_CIDEr: 47.21
+val_Bleu_4: 11.46
+val_Bleu_3: 18.07
+val_Bleu_2: 29.70
+val_Bleu_1: 52.66
+val_ROUGE_L: 33.02
+val_METEOR: 16.83
+test_public_CIDEr: 48.07
+test_public_Bleu_4: 11.73
+test_public_Bleu_3: 18.41
+test_public_Bleu_2: 30.20
+test_public_Bleu_1: 53.34
+test_public_ROUGE_L: 33.30
+test_public_METEOR: 17.10
