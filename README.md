@@ -52,7 +52,7 @@ This code will load all the data (~30GB) into RAM to speed up training,
 use `--no_core_driver` to disable this behavior. 
 
 Training using the above config will stop at around epoch 22, around 7 hours with a single 2080Ti GPU.
-You should get ~47.18 CIDEr-D and ~11.59 BLEU@4 scores on val set. 
+You should get ~47.1 CIDEr-D and ~11.4 BLEU@4 scores on val set. 
 The resulting model and config will be saved at a dir: `baselines/multimodal_transformer/results/video_sub-res-*`
 
 ### 7. I<sup>2</sup>Transformer inference
