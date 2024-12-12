@@ -6,14 +6,13 @@ Tu, Yunbin, et al. ["I<sup>2</sup>Transformer: Intra- and Inter-relation Embeddi
 ## We illustrate the training details as follows:
 
 ### 1. Prepare feature files
-Download [tvc_feature_release.tar.gz ](https://drive.google.com/file/d/1bSjxbKSxp1qEBCSwAmk8YlkRl1ztgrWO/view?usp=sharing) (23GB).
+Download [tvc_feature_release.tar.gz ](https://pan.baidu.com/s/1Myg8oDtHVos43K4AYtdGJA?pwd=tvcf) (23GB), and extraction code is tvcf.
 After downloading the file, extract it to the `data` directory.
 ```
 tar -xf path/to/tvc_feature_release.tar.gz -C data
 ```
 You should be able to see `video_feature` under `data/tvc_feature_release` directory. 
 It contains video features (ResNet, I3D, ResNet+I3D). Plase note that this code only used the features of ResNet+I3D.
-
 
 ### 2. Install dependencies:
 - Ubuntu 16.04
